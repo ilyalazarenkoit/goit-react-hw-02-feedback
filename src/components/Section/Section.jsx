@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import section from '../Section/Section.module.css';
 
 class Section extends Component {
-  static props = {
-    title: this.title,
-    children: this.children,
-  };
   render() {
     const { title, children } = this.props;
 

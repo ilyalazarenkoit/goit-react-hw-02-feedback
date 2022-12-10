@@ -3,13 +3,6 @@ import statistic from '../Statistics/Statistics.module.css';
 import { Component } from 'react';
 
 class Statistics extends Component {
-  static props = {
-    good: this.good,
-    neutral: this.neutral,
-    bad: this.bad,
-    total: this.total,
-    positivePercentage: this.positivePercentage,
-  };
   changeColor = () => {
     const { positivePercentage } = this.props;
     if (positivePercentage > 70) {
